@@ -29,7 +29,8 @@ class App extends Component {
     onLoad(e){
 
         const srcCanvas = this.refs.canvas;
-
+        const srcCanvasContext = srcCanvas.getContext('2d');
+        
         const naturalWidth = e.path[0].naturalWidth;
         const naturalHeight = e.path[0].naturalHeight;
         const aspect = (naturalHeight/naturalWidth);
@@ -48,7 +49,6 @@ class App extends Component {
             srcCanvas.height = e.path[0].height;
         }
 
-        const srcCanvasContext = srcCanvas.getContext('2d');
         srcCanvasContext.drawImage(this.srcImage, 0, 0, srcCanvas.width, srcCanvas.height);
 
         this.setState({

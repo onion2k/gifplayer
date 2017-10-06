@@ -9,8 +9,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Gif src={lipgloss} alt='Lipgloss' style={{ width: 200 }}></Gif>
-                <Gif src={smoke} alt='Smoke'></Gif>
+                <Gif src={lipgloss} alt='Lipgloss' style={{ width: 300 }}></Gif>
+                <Gif src={smoke} alt='Smoke' style={{ width: 300 }}></Gif>
             </div>
         );
     }
