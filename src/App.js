@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+import Gif from './Gif.js';
+import image from './smoke.gif';
 
-      </div>
-    );
-  }
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Gif src={image} alt='Test gif'></Gif>
+            </div>
+        );
+    }
 }
 
 export default App;
